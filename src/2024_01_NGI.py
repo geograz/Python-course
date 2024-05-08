@@ -4,8 +4,8 @@ Script for the "Python basics for geoscience and geotechnics (Pilot course)"
 from the Norwegian Geotechnical Institute. The course is held in May 2024 in
 4x4 hour sessions.
 
-This script contains the code that was written during the sessions for
-educational purposes only.
+This script contains the code that was written during the first session
+The code is for educational purposes only.
 All content of the repository falls under the MIT-license -> see license file.
 
 Author: Dr. Georg H. Erharter, georg.erharter@ngi.no
@@ -67,6 +67,10 @@ print(12 % 5)  # modulo
 # variables are placeholders for all kinds of datatypes
 # variable names should be explicit and informative
 limestone_ucs = 90  # [MPa]
+
+# multiple variables can be defined in one line
+a, b, c = [], [], []
+print(a, b, c)
 
 # string formatting is used to create dynamic strings and there are multiple
 # options
@@ -132,52 +136,3 @@ rock_UCSs['marl'] = [30, 20, 40]
 print(rock_UCSs)
 
 # Exercise 3
-
-###########################
-# session 2 on 8th May 2024
-###########################
-
-# repetition
-
-# Exercise 4
-
-
-### control structures: conditional statements: if, elif, else, match cases
-
-
-### control structures: loops: while loop, for loop
-
-# Exercise 5
-
-# Exercise 6
-
-# Exercise 7
-
-# Exercise 8
-
-# Exercise 9
-
-### functions
-
-# Exercise 10
-
-
-### reading & writing files with Python directly
-
-
-### coding style, Zen of Python
-
-
-### modules, code environments, data visualization
-
-# Exercise 11
-
-### data handling with pandas
-# import CPT dataset Premstaller and visualize random CPT test
-
-# Exercise 12
-
-# Exercise 13
-
-# Exercise 14
-
