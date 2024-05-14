@@ -71,6 +71,16 @@ match rock_type:
         print('the rock is a limestone')
 
 
+# comparisons to Booleans (i.e. True, False) should be done with using "is" or
+# "is not"
+good_weather = True
+if good_weather is True:
+    print('get a haircut')
+# in comparisons to booleans the "is True" can be skipped but this is bad for
+# readability
+
+
+
 ### control structures: loops: while loop, for loop
 # loops are used to repeat parts of code
 
