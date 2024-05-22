@@ -1,2 +1,9 @@
 # automatically generated folder
 src/__pycache__/
+
+# scripts from old courses
+src/2024_01_NGI.py
+src/2024_02_NGI.py
+src/2024_03_NGI.py
+src/2024_04_NGI.py
+2024_04_Sjur_NGI.py
