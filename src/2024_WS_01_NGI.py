@@ -139,6 +139,19 @@ soiltype_list.insert(1, 'silty sand')
 # len() gives us the number of elements of a list, tuple or string
 print(len(soiltype_list))
 
+# lists can be concatenated with +
+example_list_1 = [1, 2, 3, 4]
+example_list_2 = [5, 6, 7, 8]
+concatenated_list = example_list_1 + example_list_2
+
+# lists can be multiplied with *
+multiplied_list = concatenated_list * 10
+
+
+# the range() function can be used to create a range of numbers
+# range() by default creates a range of numbers starting from 0 up to the
+# entered number at a step of 1. But start, stop and step can be modified
+print(list(range(2, 100, 4)))
 
 # Exercise 3
 
@@ -184,6 +197,9 @@ friction_angle_dict = {'clay': [20, 19, 21],
                        'gravel': [35, 34, 33]}
 
 print(friction_angle_dict['sand'])
+
+# new entries can be added to the dictionary like this
+friction_angle_dict['silt'] = [22, 23, 24]
 
 # dictionaries can be created from lists
 rocks = ['marl', 'limestone', 'granite']
