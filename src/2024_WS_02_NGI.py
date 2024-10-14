@@ -53,6 +53,15 @@ match geotechnical_test:  # noqa
     case 'CPT':
         print('you are dealing with fine grained sediment')
 
+# to check if something is included in something else
+# works for substrings in strings, or for elements on lists etc.
+soil_types = ['gravel', 'sand', 'silt', 'cobble', 'clay']
+
+if 'silt' in soil_types:
+    print('there is silt in your soil types')
+else:
+    print('there is no silt')
+
 
 ### control structures: loops: while loop, for loop
 # loops are used to repeat parts of code
@@ -92,6 +101,7 @@ while a < limit:
 print(fib_list)
 
 # for loops are there to iterate over finite numbers of elements
+soil_types = ['gravel', 'sand', 'cobble', 'clay', 'silt']
 cohesions = [50, 66, 80, 45, 46, 47]  # [kPa]
 friction_angles = [33, 30, 28, 34, 33]  # [degrees]
 
@@ -103,7 +113,6 @@ for c in cohesions:
 print(cohesions_corrected)
 
 # to acces multiple values of the loop
-
 for c, phi in zip(cohesions, friction_angles):
     print(f'the soil has a cohesion of: {c} kPa and a phi of {phi} deg.')
 
@@ -119,6 +128,11 @@ for i in range(len(cohesions)):
         print('\nERROR: one of the lists is shorter than the other!!!!')
         print(f'error occured after {i+1} iterations')
         pass
+
+# enumerate() in a loop gives an iterator and whatever one iterates over
+for i, soil in enumerate(soil_types):
+    phi = friction_angles[i]
+    print(f'this is a {soil} outcrop with a friction angle of {phi} degrees')
 
 
 # Exercise 7
