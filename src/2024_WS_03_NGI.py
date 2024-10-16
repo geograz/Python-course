@@ -169,4 +169,29 @@ print(soil_c, soil_phi)
 
 ### coding style, Zen of Python
 
+# functions - type hints
+
+
+# type hints and function documentation is important to ensure readability and
+# reusability of code
+def get_rock_properties(rocktype: str) -> tuple:
+    '''A function that returns rock properties according to ISO 14689 for
+    different lithologies'''
+
+    match rocktype:  # noqa
+        case 'granite':
+            ucs, color = 150, 'pink'
+        case 'marl':
+            ucs, color = 20, 'dark grey'
+        case _:  # match case - wildcard / else output
+            ucs, color = 'unknown', 'unknown'
+
+    return ucs, color
+
+ucs_rock, color_rock = get_rock_properties('granite')
+
+print(ucs_rock, color_rock)
+
+get_rock_properties()
+
 # import this
